@@ -1,0 +1,52 @@
+name: wage
+description: "A new Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "lib/assets/images/app_icon.png"
+  # 【Androidの設定】
+  # 背景を黒 (#000000) に設定
+  android_background: "FF308A4F"
+  # 前景として、元のアイコン画像を再度指定 (アダプティブアイコン用)
+  android_foreground: "lib/assets/images/app_icon.png"
+
+  # 【iOSの設定】
+  # iOSアイコンの透過部分を削除し、白で塗りつぶす (これにより、周りが白く表示されるのを防ぐ)
+  remove_alpha_ios: true
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # グラフ描画パッケージ
+  fl_chart: ^0.68.0
+  # データ保持
+  isar: ^3.1.0
+  isar_flutter_libs: ^3.1.0
+
+  cupertino_icons: ^1.0.8
+  table_calendar: ^3.1.2
+  intl: ^0.19.0
+  http: ^1.2.0
+  path_provider: ^2.0.17
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  isar_generator: ^3.1.0
+  build_runner: ^2.4.10
+  flutter_launcher_icons: ^0.14.3
+
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
