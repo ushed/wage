@@ -938,7 +938,7 @@ class _ScheduleScreenState extends State<ScheduleScreen>
             padding: const EdgeInsets.symmetric(horizontal: 16.0),
             child: Row(
               children: [
-                Icon(Icons.list, color: customSwatch[700]),
+                Icon(Icons.event_note, color: customSwatch[700]),
                 const SizedBox(width: 8),
                 Expanded(
                   child: Column(
